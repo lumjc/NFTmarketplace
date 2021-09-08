@@ -3,7 +3,7 @@ pragma solidity 0.6.6;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@chainlink/contracts/src/v0.6/VRFConsumerBase.sol";
 
-contract AdvanceCollectible is ERC721, VRFConsumerBase {
+contract AdvancedCollectible is ERC721, VRFConsumerBase {
 // The EVM (Ethereum Virtual Machine) uses 256 bits as its word size.
     bytes32 internal keyHash;
     uint256 public fee;
