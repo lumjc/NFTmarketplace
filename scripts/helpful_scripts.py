@@ -1,5 +1,9 @@
 from brownie import accounts, config, interface, network
 
+def get_breed(breed_number):
+    switch = {0: 'PUG', 1:'SHIBA_INA', 2: 'ST_BERNARD'}
+    return switch[breed_number]
+
 def fund_advanced_collectible(nft_contract):
     dev = accounts.add(config['wallets']['from_key'])
     link_token = interface.LinkTokenInterface(
