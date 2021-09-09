@@ -1,7 +1,7 @@
 from brownie import accounts, config, interface, network
 
 def get_breed(breed_number):
-    switch = {0: 'PUG', 1:'SHIBA_INA', 2: 'ST_BERNARD'}
+    switch = {0: 'PUG', 1:'SHIBA-INU', 2: 'ST-BERNARD'}
     return switch[breed_number]
 
 def fund_advanced_collectible(nft_contract):
